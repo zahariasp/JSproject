@@ -7,7 +7,7 @@
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="lib/bower_components/jquery/jquery/jquery.js"></script>
+	<script src="lib/bower_components/jquery/dist/jquery.js"></script>
 	<script src="lib/js/index.js"></script>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,25 +26,27 @@
   </nav>
 </header>
 
-<main>
-  <form>
+<main id="main">
+<div class="form-group content">
     <p>Please enter the word-key</p>
-    <input type="text" name="word" placeholder="Word-key" id="word">
+    <p><input type="text" name="word" placeholder="Word-key" id="word" class="form-control" width="300px"></p>
     <p>Please enter your sentence</p>
-    <input type="text" name="sentence" placeholder="Your sentence" id="sentence">
+    <p><input type="text" name="sentence" placeholder="Your sentence" id="sentence" class="form-control"></p>
     <p>
-    <input type="submit" name="submit" value="Submit">
+    <input type="submit" name="submit" value="Submit" onclick="onSubClick()" id="sub">
     </p>
-  </form>
-
-  <div>
-    
+</div>
+  <div id="wrapper">
   </div>
+
+  <div id="result"> 
+  </div>
+
 </main>
 
 <footer>
   <hr>
-  <p>Made by: Zahari Asparuhov</p>
+  <p><i>Made by: Zahari Asparuhov</i></p>
 </footer>
 </body>
 </html>

@@ -1,0 +1,31 @@
+html, body, p, div, main, header, footer{
+	margin: 0;
+	padding: 0;
+}
+
+footer{
+	position: static;
+	bottom: 0;
+	width: 100%;
+	text-align: right;
+	font-size: 1.5em;
+
+}
+.content{
+	width: 40%;
+	margin-left: 2%;
+}
+#sub{
+	margin-top: 2%;
+}
+#main{
+	position: relative;
+}
+#wrapper{
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 40%;
+	font-size: 1.5em;
+
+}
